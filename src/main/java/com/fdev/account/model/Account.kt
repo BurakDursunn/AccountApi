@@ -19,6 +19,9 @@ data class Account(
         @JoinColumn(name = "customer_id", nullable = false)
         val customer: Customer?,
 
+        @OneToMany(mappedBy = "account", fetch = FetchType.EAGER, cascade = [CascadeType.ALL])
+        val transaction: Set<Transaction> = HashSet()
+
         ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
