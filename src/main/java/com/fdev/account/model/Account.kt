@@ -23,6 +23,14 @@ data class Account(
         val transaction: Set<Transaction> = HashSet()
 
         ) {
+
+    constructor(customer: Customer, balance: BigDecimal, creationDate: LocalDateTime) : this(
+            "",
+            customer = customer,
+            balance = balance,
+            creationDate = creationDate
+    )
+
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
