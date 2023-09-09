@@ -25,8 +25,8 @@ public class CustomerController {
         return ResponseEntity.ok(customerService.getCustomerById(customerId));
     }
     @GetMapping
-    public ResponseEntity<List<CustomerDto>> getAllCustomers(){
-        return ResponseEntity.ok(customerService.getAllCustomers());
+    public ResponseEntity<List<CustomerDto>> getAllCustomer(){
+        return ResponseEntity.ok(customerService.getAllCustomer());
     }
 
 }
