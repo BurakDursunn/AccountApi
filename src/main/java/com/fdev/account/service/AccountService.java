@@ -19,7 +19,6 @@ import java.util.logging.Logger;
 @Service
 public class AccountService {
 
-    private static final Logger logger = (Logger) LoggerFactory.getLogger(AccountService.class);
 
     private final AccountRepository accountRepository;
     private final CustomerService customerService;
