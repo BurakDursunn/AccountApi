@@ -2,7 +2,6 @@ package com.fdev.account;
 
 import com.fdev.account.model.Customer;
 import com.fdev.account.repository.CustomerRepository;
-import io.swagger.v3.oas.models.OpenAPI;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
