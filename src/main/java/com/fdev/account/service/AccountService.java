@@ -18,8 +18,6 @@ import java.util.logging.Logger;
 
 @Service
 public class AccountService {
-
-
     private final AccountRepository accountRepository;
     private final CustomerService customerService;
     private final AccountDtoConverter converter;
@@ -59,5 +57,4 @@ public class AccountService {
                 instant,
                 Clock.systemDefaultZone().getZone());
     }
-
 }

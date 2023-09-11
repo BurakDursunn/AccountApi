@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 
 @Component
 public class CustomerDtoConverter {
-
     private final CustomerAccountDtoConverter customerAccountDtoConverter;
 
     public CustomerDtoConverter(CustomerAccountDtoConverter customerAccountDtoConverter) {
@@ -20,7 +19,6 @@ public class CustomerDtoConverter {
     public AccountCustomerDto convertToAccountCustomer(Optional<Customer> from) {
         return from.map(f -> new AccountCustomerDto(f.getId(), f.getName(), f.getSurname())).orElse(null);
     }
-
 
     public CustomerDto convertToCustomerDto(Customer from) {
         return new CustomerDto(

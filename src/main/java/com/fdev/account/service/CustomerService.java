@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class CustomerService {
-
     private final CustomerRepository customerRepository;
     private final CustomerDtoConverter converter;
 
@@ -37,5 +36,4 @@ public class CustomerService {
                 .map(converter::convertToCustomerDto)
                 .collect(Collectors.toList());
     }
-
 }

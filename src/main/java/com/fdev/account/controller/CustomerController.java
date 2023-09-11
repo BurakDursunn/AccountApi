@@ -13,7 +13,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/v1/customer")
 public class CustomerController {
-
     private final CustomerService customerService;
 
     public CustomerController(CustomerService customerService) {
@@ -28,5 +27,4 @@ public class CustomerController {
     public ResponseEntity<List<CustomerDto>> getAllCustomer(){
         return ResponseEntity.ok(customerService.getAllCustomer());
     }
-
 }

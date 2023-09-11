@@ -10,7 +10,6 @@ import java.util.stream.Collectors;
 
 @Component
 public class AccountDtoConverter {
-
     private final CustomerDtoConverter customerDtoConverter;
     private final TransactionDtoConverter transactionDtoConverter;
 
