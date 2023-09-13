@@ -5,7 +5,6 @@ import jakarta.validation.constraints.NotBlank
 import java.math.BigDecimal
 
 data class CreateAccountRequest(
-
         @field:NotBlank(message = "CustomerId must not be empty")
         val customerId: String,
 

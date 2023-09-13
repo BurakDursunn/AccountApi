@@ -4,7 +4,6 @@ import com.fdev.account.dto.AccountCustomerDto;
 import com.fdev.account.dto.CustomerDto;
 import com.fdev.account.model.Customer;
 import org.springframework.stereotype.Component;
-
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -29,6 +28,5 @@ public class CustomerDtoConverter {
                         .stream()
                         .map(customerAccountDtoConverter::convert)
                         .collect(Collectors.toSet()));
-
     }
 }

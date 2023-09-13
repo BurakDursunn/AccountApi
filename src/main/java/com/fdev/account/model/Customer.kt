@@ -2,8 +2,6 @@ package com.fdev.account.model
 
 import jakarta.persistence.*
 import org.hibernate.annotations.GenericGenerator
-import java.math.BigDecimal
-import java.time.LocalDateTime
 
 @Entity
 data class Customer(

@@ -3,7 +3,6 @@ package com.fdev.account.dto.converter;
 import com.fdev.account.dto.CustomerAccountDto;
 import com.fdev.account.model.Account;
 import org.springframework.stereotype.Component;
-
 import java.util.Objects;
 import java.util.stream.Collectors;
 @Component

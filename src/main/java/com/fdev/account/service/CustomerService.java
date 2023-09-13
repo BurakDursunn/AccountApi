@@ -6,7 +6,6 @@ import com.fdev.account.exceptions.CustomerNotFoundException;
 import com.fdev.account.model.Customer;
 import com.fdev.account.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -30,7 +29,6 @@ public class CustomerService {
     }
 
     public List<CustomerDto> getAllCustomer() {
-
         return customerRepository.findAll()
                 .stream()
                 .map(converter::convertToCustomerDto)

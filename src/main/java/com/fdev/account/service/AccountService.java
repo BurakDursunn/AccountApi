@@ -7,14 +7,11 @@ import com.fdev.account.model.Account;
 import com.fdev.account.model.Customer;
 import com.fdev.account.model.Transaction;
 import com.fdev.account.repository.AccountRepository;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-
 import java.math.BigDecimal;
 import java.time.Clock;
 import java.time.Instant;
 import java.time.LocalDateTime;
-import java.util.logging.Logger;
 
 @Service
 public class AccountService {
@@ -22,7 +19,6 @@ public class AccountService {
     private final CustomerService customerService;
     private final AccountDtoConverter converter;
     private final Clock clock;
-
 
     public AccountService(AccountRepository accountRepository, CustomerService customerService,
                           AccountDtoConverter converter, Clock clock) {
